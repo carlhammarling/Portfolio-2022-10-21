@@ -79,7 +79,7 @@
                 </div>
 <!--FORM CONTACT-->
                <form id="contact">
-                    <div class="form">
+                    <div id="form" class="form">
                         <div class="formHead">
                             <h4 class="bold head center">WRITE ME A MESSAGE</h4>
                         </div>
@@ -96,7 +96,19 @@
                             <label class="label" for="email">Email:</label>
                             <input class="input" type="email" id="email">
                         </div>  
-                        <button class="price" id="send">SEND REQUEST</button>                    
+                        <button class="price" id="send">SEND REQUEST</button>                
+                    </div>
+                </form>
+                <!--resetmessage-->
+                <form id="resetMsg">
+                    <div id="success" class="success hide">
+                        <div class="formHead">
+                            <h4 class="bold head center">YOUR MESSAGE WAS SENT!</h4>
+                        </div>
+                        <div class="center pad2">
+                            <img width="100px" src="./resources/misc/greenCheck.png" alt="">
+                        </div>
+                        <button class="price" id="another">SEND ANOTHER MESSAGE?</button> 
                     </div>
                 </form>
                

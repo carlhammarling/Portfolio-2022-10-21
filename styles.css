@@ -3,7 +3,7 @@ ny turkos: 229388
 turkos: #0d4943;
 ljusturkos: cbf3f0
 gul gamla : #ffd000;
-gul ny#ffcc00;
+gul ny #ffcc00;
 */
 
 * {
@@ -216,7 +216,6 @@ h5 {
     position: relative;
     top: -7rem;
     color: #0d4943;
-    box-shadow: rgb(255, 208, 0) 16px 16px 0px;
     transition: 600ms;  
     box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 30px;
 }
@@ -230,6 +229,18 @@ h5 {
 .form:hover #msg {
     height: 10rem;
     transition: 600ms;
+}
+
+.success {
+    padding: 2rem;
+    border-radius: .2rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    position: relative;
+    top: -7rem;
+    color: #0d4943;
+    transition: 600ms;  
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 30px;
 }
 
 .input {
@@ -251,3 +262,10 @@ h5 {
     height: 3rem;
 }
 
+.hide {
+    display: none;
+}
+
+.pad2 {
+    padding: 2rem;
+}
