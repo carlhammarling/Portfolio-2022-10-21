@@ -1,0 +1,253 @@
+/*
+ny turkos: 229388
+turkos: #0d4943;
+ljusturkos: cbf3f0
+gul gamla : #ffd000;
+gul ny#ffcc00;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background-color: white;
+    color: white;
+}
+
+.main {
+    
+    /*background: url(./resources/Båten\ 2022/IMG_5977_jpg.jpg) #07d1ca28;*/
+    background: url(./resources/Båten\ 2022/IMG_5977_jpg.jpg);
+    background-blend-mode:overlay;
+   /* height: 850px;*/
+    height: 100vh;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    /*vertikalt*/
+    align-items: center;
+}
+.navbar {
+    height: 80px;
+    padding: 20px 5rem;
+}
+
+#logo {
+    height: 60px;
+}
+
+/*lägger knapparna på rad*/
+.btnNavbar {
+    display: flex;
+}
+
+.btn {
+    background-color: hwb(0 100% 0% / 0);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;   
+}
+.color {
+  
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+.color:hover {
+    background-color: white;
+    color: rgb(0, 0, 0 , .4);
+    transition: 400ms;
+}
+
+.info {
+    border: 0;
+    color: #0d4943;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+.info:hover {
+    color: white;
+    transition: 400ms;
+}
+
+.btmSpace {
+    margin-bottom: 200px ;
+}
+
+.price {
+    background-color: #ffcc00;
+    width: 20rem;
+    height: 4rem;
+    border-radius: .2rem; 
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0;
+   transition: 200ms;
+}
+
+.price:hover {
+    transform: rotate(1turn);
+    transform: scale(1.03, 1.03);
+    transition: 300ms;
+}
+
+.present {
+    padding: 10rem 6rem;
+  
+    text-align: center;
+    /*text-shadow: rgba(149, 157, 165, 0.5) 0px 3px 3px;*/
+}
+
+h1 {
+    font-size: 80px;
+    font-weight:900;
+    margin-bottom: .7rem;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: auto;
+}
+
+h4 { 
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+}
+.head {
+    margin-bottom: 1rem;
+}
+
+.hover:hover {
+    color: #ffcc00;; 
+}
+
+
+.footer {
+    background-color: #0d4943;
+    /*height: 390px;*/
+    padding-top: 2rem;
+    display: block;
+}
+
+.top {
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.bottomn {
+    bottom: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+
+.col {
+   max-width: 400px;
+   max-height: 250px;
+   /* margin: 40px;*/
+    padding: 2rem;
+    border-radius: 1.5rem;
+    transition: 200ms;
+    
+}
+
+.col:hover {
+    box-shadow: rgba(6, 46, 41, 0.3)  0px 8px 50px;
+    transition: 200ms;
+    background-image: radial-gradient(rgb(255, 255, 255, 0.06),#0d4943);
+}
+
+.imgIcon {
+    filter: invert();
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.form {
+    padding: 2rem;
+    border-radius: .2rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    position: relative;
+    top: -7rem;
+    color: #0d4943;
+    box-shadow: rgb(255, 208, 0) 16px 16px 0px;
+    transition: 600ms;  
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 30px;
+}
+
+.form:hover {
+    /*transform: scale(1.2);*/
+   top: -15rem;
+    transition: 600ms;
+}
+
+.form:hover #msg {
+    height: 10rem;
+    transition: 600ms;
+}
+
+.input {
+   /* background-color: #12675f;*/
+   width: 100%;
+   height: 2rem;
+    padding: .5rem;
+    border-radius: .2rem;
+    border: 1px solid #accfcb;
+    margin-bottom: 1rem;
+}
+
+#msg { 
+    resize: none;
+    transition: 600ms;
+}
+
+#send {
+    height: 3rem;
+}
+
