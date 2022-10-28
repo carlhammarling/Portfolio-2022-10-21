@@ -18,8 +18,12 @@
                 </div>
                 <!--meny-->
                 <div class="btnNavbar">
+                    <a href="">
                         <button class="btn info">INFO</button> 
-                        <button class="btn color">CONTACT</button> 
+                    </a>
+                    <a href="mailto:carlhammarling@gmail.com" target="_blank">
+                        <button class="btn color">CONTACT</button>
+                    </a>
                 </div>
             </div>
             <!--nav slut-->
@@ -62,19 +66,37 @@
                 <div id="follow" class="col">
                     <h4 class="bold head">FOLLOW ME</h4>                  
                         <div class="list">
-                            <img class="imgIcon" src="./resources/connections/linked in.png"><h4 class="hover">LinkedIn</h4>
+                            <img class="imgIcon" src="./resources/connections/linked in.png">
+                            <a href="https://www.linkedin.com/in/carl-hammarling-66b084229/" target="_blank">
+                                <h4 class="hover">LinkedIn</h4>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <img class="imgIcon" src="./resources/connections/mail.png">
+                            <a href="mailto:carlhammarling@gmail.com" target="_blank">
+                                <h4 class="hover">carlhammarling@gmail.com</h4>
+                            </a>
                         </div>
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/whatsapp.png"><h4 class="hover">WhatsApp</h4>
                         </div>
                         <div class="list">
-                            <img class="imgIcon" src="./resources/connections/github.png" alt=""><h4 class="hover">Github</h4>
+                            <img class="imgIcon" src="./resources/connections/github.png" alt="">
+                            <a href="https://github.com/carlhammarling" target="_blank">
+                                <h4 class="hover">Github</h4>
+                            </a>
                         </div>
                         <div class="list">
-                            <img class="imgIcon" src="./resources/connections/inst.png" alt=""><h4 class="hover">Instagram</h4>
+                            <img class="imgIcon" src="./resources/connections/inst.png" alt="">
+                            <a href="https://www.instagram.com/charlychanter/" target="_blank">
+                                <h4 class="hover">Instagram</h4>
+                            </a>
                         </div>
                         <div class="list">
-                            <img class="imgIcon" src="./resources/connections/facebook.png" alt=""><h4 class="hover">Facebook</h4>
+                            <img class="imgIcon" src="./resources/connections/facebook.png" alt="">
+                            <a href="https://www.facebook.com/carl.hammarling/" target="_blank">
+                                <h4 class="hover">Facebook</h4>
+                            </a>
                         </div>
                 </div>
 <!--FORM CONTACT-->
@@ -100,8 +122,9 @@
                             <label class="label" for="drop">Choose a category:</label>
                             <select class="input" name="drop" id="drop">
                                 <optgroup label="Category">
-                                    <option value="1">Work</option>
-                                    <option value="2">Twerk</option>
+                                    <option disable hidden selected value="1">Category</option>
+                                    <option value="work">Work</option>
+                                    <option value="twerk">Twerk</option>
                                 </optgroup>
                             </select>
                         </div>
