@@ -11,7 +11,7 @@
     <div class="wrapper">
         <div class="main">
             <!--navbar-->
-            <div class="navbar row">
+            <nav class="navbar row">
                 <!--logodel-->
                 <div>
                         <img id="logo" src="./resources/UPTOWN SKUNKAZ LOGO.png" alt="Logo">
@@ -25,36 +25,36 @@
                         <button class="btn color">CONTACT</button>
                     </a>
                 </div>
-            </div>
+            </nav>
             <!--nav slut-->
-            <div class="present">
+            <main class="present">
                     <h1>Hi! I am Carl.</h1>
                     <h3 class="btmSpace">FRONTEND DEVELOPER  |  UI-DESIGNER</h3>              
                     <button id="price" class="price">GET A PRICE</button>
-            </div>
+            </main>
         </div>
 <!--FOOTER-->
-        <div class="footer">
+        <footer class="footer">
            <div class="top">
 <!--SKILLS-->
-                <div class="col">
+                <ul class="col">
                         <h4 class="bold head">SKILLS</h4>  
                             <div class="list">
-                                <img class="imgIcon" src="./resources/sprak/HTML5.png"><h4 class="hover">HTML5</h4>
+                                <img class="imgIcon" src="./resources/sprak/HTML5.png"><li class="hover">HTML5</li>
                             </div>                 
                             <div class="list">
-                                <img class="imgIcon" src="./resources/sprak/javascript-logo.png"><h4 class="hover">JavascriptE6</h4>
+                                <img class="imgIcon" src="./resources/sprak/javascript-logo.png"><li class="hover">JavascriptE6</li>
                             </div>                 
                             <div class="list">
-                                <img class="imgIcon" src="./resources/sprak/css-4.svg"><h4 class="hover">CSS3</h4>
+                                <img class="imgIcon" src="./resources/sprak/css-4.svg"><li class="hover">CSS3</li>
                             </div>                                    
                             <div class="list">
-                                <img class="imgIcon" src="./resources/sprak/logo-react.svg"><h4 class="hover">React</h4>
+                                <img class="imgIcon" src="./resources/sprak/logo-react.svg"><li class="hover">React</li>
                             </div>                                    
                             <div class="list">
-                                <img class="imgIcon" src="./resources/sprak/node.png"><h4 class="hover">Node</h4>
+                                <img class="imgIcon" src="./resources/sprak/node.png"><li class="hover">Node</li>
                             </div>                                    
-                </div> 
+                </ul> 
 <!--ABOUT ME-->          
                 <div class="col">
                      <h4 class="bold head">WHO AM I?</h4>
@@ -63,18 +63,18 @@
                      </h4>
                 </div>
 <!--FOLLOW ME-->
-                <div id="follow" class="col">
+                <ul id="follow" class="col">
                     <h4 class="bold head">FOLLOW ME</h4>                  
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/linked in.png">
                             <a href="https://www.linkedin.com/in/carl-hammarling-66b084229/" target="_blank">
-                                <h4 class="hover">LinkedIn</h4>
+                                <li class="hover">LinkedIn</li>
                             </a>
                         </div>
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/mail.png">
                             <a href="mailto:carlhammarling@gmail.com" target="_blank">
-                                <h4 class="hover">carlhammarling@gmail.com</h4>
+                                <li class="hover">carlhammarling@gmail.com</li>
                             </a>
                         </div>
                         <div class="list">
@@ -83,72 +83,72 @@
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/github.png" alt="">
                             <a href="https://github.com/carlhammarling" target="_blank">
-                                <h4 class="hover">Github</h4>
+                                <li class="hover">Github</li>
                             </a>
                         </div>
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/inst.png" alt="">
                             <a href="https://www.instagram.com/charlychanter/" target="_blank">
-                                <h4 class="hover">Instagram</h4>
+                                <li class="hover">Instagram</li>
                             </a>
                         </div>
                         <div class="list">
                             <img class="imgIcon" src="./resources/connections/facebook.png" alt="">
                             <a href="https://www.facebook.com/carl.hammarling/" target="_blank">
-                                <h4 class="hover">Facebook</h4>
+                                <li class="hover">Facebook</li>
                             </a>
                         </div>
+                </ul>
+                        <!--FORM CONTACT-->
+        <form id="contact">
+            <div id="form" class="form">
+                <div class="formHead">
+                    <h4 class="bold head center">WRITE ME A MESSAGE</h4>
                 </div>
-<!--FORM CONTACT-->
-               <form id="contact">
-                    <div id="form" class="form">
-                        <div class="formHead">
-                            <h4 class="bold head center">WRITE ME A MESSAGE</h4>
-                        </div>
-                        <div class="input-group">
-                            <label class="label" for="msg">How can i help you?</label>
-                            <textarea class="input" id="msg" rows="10" cols="1">
-                            </textarea>
-                        </div>                     
-                        <div class="input-group">
-                            <label class="label" for="name">Full Name:</label>
-                            <input class="input" type="text" id="name">
-                        </div>                      
-                        <div class="input-group">
-                            <label class="label" for="email">Email:</label>
-                            <input class="input" type="email" id="email">
-                        </div>
-                        <div class="input-group">
-                            <label class="label" for="drop">Choose a category:</label>
-                            <select class="input" name="drop" id="drop">
-                                <optgroup label="Category">
-                                    <option disable hidden selected value="1">Category</option>
-                                    <option value="work">Work</option>
-                                    <option value="twerk">Twerk</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <button class="price" id="send">SEND REQUEST</button>                
-                    </div>
-                </form>
-                <!--resetmessage-->
-                <form id="resetMsg">
-                    <div id="success" class="success hide">
-                        <div class="formHead">
-                            <h4 class="bold head center">YOUR MESSAGE WAS SENT!</h4>
-                        </div>
-                        <div class="center pad2">
-                            <img width="100px" src="./resources/misc/greenCheck.png" alt="">
-                        </div>
-                        <button class="price" id="another">SEND ANOTHER MESSAGE?</button> 
-                    </div>
-                </form>
+                <div class="input-group">
+                    <label class="label" for="msg">How can i help you?</label>
+                    <textarea class="input" id="msg" rows="10" cols="1">
+                    </textarea>
+                </div>                     
+                <div class="input-group">
+                    <label class="label" for="name">Full Name:</label>
+                    <input class="input" type="text" id="name">
+                </div>                      
+                <div class="input-group">
+                    <label class="label" for="email">Email:</label>
+                    <input class="input" type="email" id="email">
+                </div>
+                <div class="input-group">
+                    <label class="label" for="drop">Choose a category:</label>
+                    <select class="input" name="drop" id="drop">
+                        <optgroup label="Category">
+                            <option disable hidden selected value="1">Category</option>
+                            <option value="work">Work</option>
+                            <option value="twerk">Twerk</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button class="price" id="send">SEND REQUEST</button>                
+            </div>
+        </form>
+        <!--resetmessage-->
+        <form id="resetMsg">
+            <div id="success" class="success hide">
+                <div class="formHead">
+                    <h4 class="bold head center">YOUR MESSAGE WAS SENT!</h4>
+                </div>
+                <div class="center pad2">
+                    <img width="100px" src="./resources/misc/greenCheck.png" alt="">
+                </div>
+                <button class="price" id="another">SEND ANOTHER MESSAGE?</button> 
+            </div>
+        </form>
                
            </div>
-           <div class="bottomn">
+           <div class="bottom">
             <h5>© Carl Hammarling - 2022 All rights reserved</h5>
         </div>
-        </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
