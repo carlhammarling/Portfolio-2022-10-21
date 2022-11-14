@@ -19,28 +19,26 @@ body {
     color: white;
 }
 
-.main {
-    
-    /*background: url(./resources/Båten\ 2022/IMG_5977_jpg.jpg) #07d1ca28;*/
+/* .border {
+    border: 1px solid red;
+} */
+
+main {
     background: url(./resources/IMG_5977_jpg.jpg);
-    background-blend-mode:overlay;
-   /* height: 850px;*/
+    background-size: 1700px;
     height: 100vh;
     background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.row {
+header {
+    height: 80px;
+    padding: 20px 5rem;
     display: flex;
     justify-content: space-between;
     /*vertikalt*/
     align-items: center;
-}
-.navbar {
-    height: 80px;
-    padding: 20px 5rem;
-    position: sticky;
-    /*viktigt att lägga top, eller left... ananrs vet den inte VAR den ska ligga*/
-    top:0;
 }
 
 #logo {
@@ -48,7 +46,7 @@ body {
 }
 
 /*lägger knapparna på rad*/
-.btnNavbar {
+nav {
     display: flex;
 }
 
@@ -91,7 +89,7 @@ body {
 
 .price {
     background-color: #ffcc00;
-    width: 20rem;
+    width: 20em;
     height: 4rem;
     border-radius: .2rem; 
     color: white;
@@ -109,14 +107,18 @@ body {
 }
 
 .present {
-    padding: 10rem 6rem;
-  
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     /*text-shadow: rgba(149, 157, 165, 0.5) 0px 3px 3px;*/
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5em;
     font-weight:900;
     margin-bottom: .7rem;
 }
@@ -127,7 +129,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 300;
     margin: auto;
 }
@@ -165,6 +167,9 @@ a {
 
 .footer {
     background-color: #0d4943;
+    /* background: radial-gradient(circle, rgba(13,73,67,1) 18%, rgba(10,54,49,1) 100%); */
+    background: radial-gradient(circle, rgba(13,73,67,1) 18%, rgba(12,68,62,1) 100%);
+
     /*height: 390px;*/
     padding-top: 2rem;
     display: block;
@@ -174,6 +179,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    padding: 0px 10px;
     height: 300px;
 }
 
@@ -189,14 +195,13 @@ a {
    max-height: 250px;
    /* margin: 40px;*/
     padding: 2rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     transition: 200ms;
     
 }
 
 .col:hover {
     box-shadow: rgba(6, 46, 41, 0.3)  0px 8px 50px;
-    transition: 200ms;
     background-image: radial-gradient(rgb(255, 255, 255, 0.06),#0d4943);
 }
 
@@ -228,7 +233,7 @@ li {
 .form {
     padding: 2rem;
     border-radius: .2rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background-color: white;
     position: relative;
     top: -7rem;
@@ -251,7 +256,7 @@ li {
 .success {
     padding: 2rem;
     border-radius: .2rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background-color: white;
     position: relative;
     top: -7rem;
@@ -285,4 +290,70 @@ li {
 
 .pad2 {
     padding: 2rem;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px){
+    .form {
+        display: none;
+    }
+    .success {
+        display: none;
+    }
+    .top {
+        height: inherit;
+    }
+
+
+}
+
+@media (max-width: 740px) {
+
+    header {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+
+    main {
+        background-position: 22% 75%;
+    }
+
+    .present {
+    font-size: 70%;
+    justify-content: flex-end;
+    }
+
+    .btmSpace {
+        margin-bottom: 20px ;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    #who {
+        order:0;
+    }
+
+    #follow {
+        order:2;
+    }
+
+    #skills {
+        order:1;
+    }
+
+    .col:hover {
+        box-shadow: inherit;
+        background-image: inherit;
+    }
 }

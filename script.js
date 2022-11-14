@@ -34,11 +34,10 @@ const valEmail = (id) => {
 
 //skapar ett meddelande
 class Message {
-    constructor(message, name, email, category) {
+    constructor(message, name, email) {
         this.message = message.value.trim()
         this.name = name.value
         this.email = email.value
-        this.category = category.value
     }
 }
 
@@ -53,7 +52,6 @@ form.addEventListener('submit', e => {
     const message = document.querySelector('#msg');
     const name = document.querySelector('#name');
     const email = document.querySelector('#email');
-    const category = document.querySelector('#drop');
 
     errors[0] = valMsg(message);
     errors[1] = valName(name);
@@ -65,7 +63,7 @@ form.addEventListener('submit', e => {
 
     else {
     //skapar meddelande    
-    const request = new Message(message, name, email, category);
+    const request = new Message(message, name, email);
     //pushar in meddelande i array
     messages.push(request);
 
