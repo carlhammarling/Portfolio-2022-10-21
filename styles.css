@@ -324,12 +324,13 @@ li {
 
     main {
         background-size: 1200px;
-        background-position: 22% 75%;
+        background-position: 22% 100%;
     }
 
     .present {
     font-size: 70%;
     justify-content: flex-end;
+    padding-bottom: 80px;
     }
 
     .btmSpace {
