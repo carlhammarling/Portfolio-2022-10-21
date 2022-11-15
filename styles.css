@@ -190,8 +190,8 @@ a {
 
 
 .col {
-   max-width: 400px;
-   max-height: 250px;
+   max-width: 600px;
+   /* max-height: 250px; */
    /* margin: 40px;*/
     padding: 2rem;
     border-radius: 1rem;
