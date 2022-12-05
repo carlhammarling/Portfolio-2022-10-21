@@ -26,11 +26,16 @@ body {
     background: url(./IMG_5977_jpg.jpg);
     background-size: 1700px;
     height: 100vh;
+    max-height: 1000px;
     background-position: center;
 
     @media (max-width: 740px) {
         background-size: 1300px;
         background-position: 22% 100%;       
+    }
+    @media (max-height: 600px) {
+        background-size: 1600px;
+        background-position: 30% 80%;       
     }
 
     header {
@@ -45,6 +50,7 @@ body {
 
         #logo {
             height: 60px;
+            // display: none;
             @media (max-width: 740px) {
                 display: none;
             }
@@ -84,6 +90,11 @@ body {
             justify-content: flex-end;
             padding-bottom: 50px;
             max-height: initial;
+        }
+
+        @media (max-height: 600px) {
+            @include flex(column, flex-end, center);
+            font-size: 70%;
         }
 
         h1 {

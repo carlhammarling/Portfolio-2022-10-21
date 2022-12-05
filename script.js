@@ -91,3 +91,5 @@ resetMsg.addEventListener('submit', e => {
     form.classList.remove('hide');
     success.classList.add('hide');
 })
+
+console.log(messages[0])

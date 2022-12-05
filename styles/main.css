@@ -81,12 +81,19 @@ body {
   background: url(./IMG_5977_jpg.jpg);
   background-size: 1700px;
   height: 100vh;
+  max-height: 1000px;
   background-position: center;
 }
 @media (max-width: 740px) {
   .wrapper {
     background-size: 1300px;
     background-position: 22% 100%;
+  }
+}
+@media (max-height: 600px) {
+  .wrapper {
+    background-size: 1600px;
+    background-position: 30% 80%;
   }
 }
 .wrapper header {
@@ -159,6 +166,15 @@ body {
     justify-content: flex-end;
     padding-bottom: 50px;
     max-height: initial;
+  }
+}
+@media (max-height: 600px) {
+  .wrapper main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 70%;
   }
 }
 @media (max-width: 350px) {
