@@ -50,30 +50,36 @@ body {
 
         #logo {
             height: 60px;
-            // display: none;
+            visibility: hidden;
             @media (max-width: 740px) {
                 display: none;
             }
         }
         
         nav {
-            display: flex;
+            .menu {
+                display: flex;
 
-            button {
-                @include roundBtn;  
-            }
-            .color {
-                @include btnStyle($vit, $transparent, 2px, $vit);
-                &:hover {
-                    @include btnStyle($halvTransp, $vit, 2px, $vit);                    
+                .button {
+                    @include roundBtn;
+                    margin-left: 1rem;  
                 }
-            }
-            .info {
-                @include btnStyle($turkos, $transparent, 0px , $transparent);
-                &:hover {
-                    @include btnStyle($vit, $transparent, 0px, $transparent);                    
+                .color {
+                    @include btnStyle($vit, $transparent, 2px, $vit);
+                    &:hover {
+                        @include btnStyle($halvTransp, $vit, 2px, $vit);                    
+                    }
                 }
+                .info {
+                    @include btnStyle($turkos, $transparent, 0px , $transparent);
+                    &:hover {
+                        @include btnStyle($vit, $transparent, 0px, $transparent);                    
+                    }
+                }
+
             }
+
+            
         }
     }
 

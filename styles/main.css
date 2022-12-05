@@ -112,39 +112,41 @@ body {
 }
 .wrapper header #logo {
   height: 60px;
+  visibility: hidden;
 }
 @media (max-width: 740px) {
   .wrapper header #logo {
     display: none;
   }
 }
-.wrapper header nav {
+.wrapper header nav .menu {
   display: flex;
 }
-.wrapper header nav button {
-  width: 8rem;
-  height: 3rem;
+.wrapper header nav .menu .button {
+  padding: 0.9rem 2rem;
+  font-size: 0.9rem;
   border-radius: 2rem;
   font-weight: 600;
   transition: 400ms;
   cursor: pointer;
+  margin-left: 1rem;
 }
-.wrapper header nav .color {
+.wrapper header nav .menu .color {
   background-color: hwb(0 100% 0%/0);
   color: white;
   border: 2px solid white;
 }
-.wrapper header nav .color:hover {
+.wrapper header nav .menu .color:hover {
   background-color: white;
   color: rgba(0, 0, 0, 0.4);
   border: 2px solid white;
 }
-.wrapper header nav .info {
+.wrapper header nav .menu .info {
   background-color: hwb(0 100% 0%/0);
   color: #0d4943;
   border: 0px solid hwb(0 100% 0%/0);
 }
-.wrapper header nav .info:hover {
+.wrapper header nav .menu .info:hover {
   background-color: hwb(0 100% 0%/0);
   color: white;
   border: 0px solid hwb(0 100% 0%/0);
