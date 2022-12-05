@@ -5,41 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Hammarling | Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<main>
-    <header class="border">
+<div class="wrapper">
+    <header>
         <!--logodel-->
-        <div class="logo border">
-            <img id="logo" src="./resources/UPTOWN SKUNKAZ LOGO.png" alt="Logo">
-        </div>
+        <img id="logo" src="./resources/UPTOWN SKUNKAZ LOGO.png" alt="Logo">
         <!--meny-->
-        <nav class="border">
+        <nav>
             <a href="#footer">
-                <button class="btn info">INFO</button> 
+                <button class="info">INFO</button> 
             </a>
             <a href="mailto:carlhammarling@gmail.com" target="_blank">
-                <button class="btn color">CONTACT</button>
+                <button class="color">CONTACT</button>
             </a>
         </nav>
     </header>
-    <section class="present border">
+    <main>
         <div>
             <h1>Hi! I am Carl.</h1>
-            <h3 class="btmSpace">FRONTEND DEVELOPER  |  UI-DESIGNER</h3>              
+            <h2 class="btmSpace">FRONTEND DEVELOPER  |  UI-DESIGNER</h2>              
         </div>
         <div>
-            <button id="price" class="price">GET A PRICE</button>
+            <button id="price" class="bigBtn">GET A PRICE</button>
         </div>
-    </section>
-</main>
+    </main>
+</div>
 <!--FOOTER-->
-<footer id="footer" class="footer">
+<footer>
    <div class="top">
     <!--SKILLS-->
-        <ul id="skills" class="col">
-                <h4 class="bold head">SKILLS</h4>  
+        <ul id="skills" class="factBox">
+                <h3>SKILLS</h3>  
                     <div class="list">
                         <img class="imgIcon" src="./resources/sprak/HTML5.png"><li class="hover">HTML5</li>
                     </div>                 
@@ -60,16 +58,16 @@
                     </div>                                     -->
         </ul> 
 <!--ABOUT ME-->          
-        <div id="who" class="col">
-             <h4 class="bold head">WHO AM I?</h4>
-             <h4>I am a 34 year old swede who has creativity inscripted in my geenes.
+        <div id="who" class="factBox">
+             <h3>WHO AM I?</h3>
+             <p>I am a 34 year old swede who has creativity inscripted in my geenes.
                  I have been experimenting with design, art and music for as long as I can remember, and I really love what I am doing!
-                 For the moment I am studying my first year at KYH's Frontend Developer program. Feel free to follow my journey as I will update this portfolio with my progress.
-             </h4>
+                 At the moment I am studying my first year at KYH's Frontend Developer program. Feel free to follow my journey as I will update this portfolio with my progress.
+             </p>
         </div>
 <!--FOLLOW ME-->
-        <ul id="follow" class="col">
-            <h4 class="bold head">FOLLOW ME</h4>                  
+        <ul id="follow" class="factBox">
+            <h3>FOLLOW ME</h3>                  
                 <div class="list">
                     <img class="imgIcon" src="./resources/connections/linked in.png">
                     <a href="https://www.linkedin.com/in/carl-hammarling-66b084229/" target="_blank">
@@ -83,7 +81,7 @@
                     </a>
                 </div>
                 <div class="list">
-                    <img class="imgIcon" src="./resources/connections/whatsapp.png"><h4 class="hover">WhatsApp</h4>
+                    <img class="imgIcon" src="./resources/connections/whatsapp.png"><li class="hover">WhatsApp</li>
                 </div>
                 <div class="list">
                     <img class="imgIcon" src="./resources/connections/github.png" alt="">
@@ -106,14 +104,13 @@
         </ul>
                 <!--FORM CONTACT-->
 <form id="contact">
-    <div id="form" class="form">
+    <div id="msgForm" class="form">
         <div class="formHead">
-            <h4 class="bold head center">WRITE ME A MESSAGE</h4>
+            <h3 class="center">WRITE ME A MESSAGE</h3>
         </div>
         <div class="input-group">
             <label class="label" for="msg">How can i help you?</label>
-            <textarea class="input" id="msg" rows="10" cols="1">
-            </textarea>
+            <textarea class="input" id="msg" rows="10" cols="1"></textarea>
         </div>                     
         <div class="input-group">
             <label class="label" for="name">Full Name:</label>
@@ -123,20 +120,24 @@
             <label class="label" for="email">Email:</label>
             <input class="input" type="email" id="email">
         </div>
-        <button class="price" id="send">SEND REQUEST</button>                
+        <button class="bigBtn" id="send">SEND REQUEST</button>                
     </div>
 </form>
 <!--resetmessage-->
 <form id="resetMsg">
-    <div id="success" class="success hide">
+    <div id="success" class="form hide">
         <div class="formHead">
-            <h4 class="bold head center">YOUR MESSAGE WAS SENT!</h4>
+            <h3 class="center">YOUR MESSAGE WAS SENT!</h3>
         </div>
         <div class="center pad2">
             <img width="100px" src="./resources/misc/greenCheck.png" alt="">
         </div>
-        <button class="price" id="another">SEND ANOTHER MESSAGE?</button> 
+        <div class="center">
+            <span id="copy"></span>
+        </div>
+        <button class="bigBtn" id="another">SEND ANOTHER MESSAGE?</button> 
     </div>
+    </form>
        
    </div>
    <div class="bottom">

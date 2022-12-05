@@ -1,0 +1,89 @@
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin roundBtn{
+        width: 8rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        transition: 400ms;
+        cursor: pointer; 
+}
+
+@mixin btnStyle($color, $bgcolor, $px, $border) {
+        background-color: $bgcolor;
+        color: $color;
+        border: $px solid $border;
+}
+
+@mixin bigBtn($bgcolor, $color) {
+        background-color: $bgcolor;
+        width: 20em;
+        max-width: 95vw;
+        height: 4rem;
+        border-radius: .2rem; 
+        color: $color;
+        font-size: 1rem;
+        font-weight: 500;
+        border: 0;
+        transition: 200ms;
+        cursor: pointer;
+
+        &:hover {
+                transform: scale(1.03);
+        }
+    }
+
+@mixin factBox {
+        max-width: 600px;
+        padding: 1.5rem;
+        margin: .5rem;
+        border-radius: 1rem;
+        transition: 200ms;
+        &:hover {
+              box-shadow: $shadow;
+              background: $divRadial;
+        }
+}
+
+@mixin form {
+        padding: 1.5rem;
+        margin: .5rem;
+        border-radius: .2rem;
+        border-radius: 1rem;
+        background-color: white;
+        position: relative;
+        color: $turkos;
+        transition: 600ms;  
+        box-shadow: $shadow2;
+        
+        .label {
+            display: block;
+            margin-bottom: .3rem;
+        }
+        
+        .input { 
+            width: 100%;
+            height: 2rem;
+            padding: .5rem;
+            border-radius: .2rem;
+            border: 1px solid $graTurk;
+            margin-bottom: 1rem;
+         }
+
+         #msg { 
+                resize: none;
+                transition: 600ms;
+            }  
+}
+
+@mixin hide {
+        .hide {
+                display: none;
+        }
+}

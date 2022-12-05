@@ -1,0 +1,68 @@
+@mixin fonts {
+
+    h1 {
+        font-size: 5em;
+        font-weight:900;
+        margin-bottom: .7rem;
+    }
+
+    h3 { 
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 140%;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .center {
+        text-align: center;
+    }
+
+    main {                
+        h2 {
+            font-size: 1.25em;
+            font-weight: 300;            
+        }
+    }
+
+    footer {        
+        h5 {
+            font-weight: 100;
+        }
+        .hover:hover {
+            color: $gul; 
+        }
+        
+    }  
+}
+
+@mixin list {
+    .list {
+        display: flex;
+        align-items: center;
+    }
+    
+    li {
+        list-style: none;
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 140%;
+    }
+
+    .imgIcon {
+        filter: invert(100%);
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}
